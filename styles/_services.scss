@@ -1,0 +1,15 @@
+.services {
+  padding: 30px 0;
+  &__title {
+    margin-bottom: 30px;
+  }
+  &__card-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  &__info-list {
+    display: flex;
+    gap: 40px;
+  }
+}
