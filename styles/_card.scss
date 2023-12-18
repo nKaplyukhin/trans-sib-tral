@@ -1,10 +1,42 @@
+@import "./variables";
+
 .card {
   width: 100%;
   display: flex;
   justify-content: space-between;
+  gap: 20px;
   &__content {
     width: 100%;
-    box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 0px 5px 5px rgba($color: #1f1f1f, $alpha: 0.1);
     padding: 20px;
+  }
+  &__title {
+    margin-bottom: 20px;
+  }
+  &__list {
+    margin-bottom: 20px;
+    list-style-type: disc;
+    list-style-position: inside;
+  }
+  &__item {
+    padding: 3px;
+  }
+  &__text {
+    margin-bottom: 20px;
+  }
+
+  &__button {
+    background-color: #1f1f1f;
+    color: #fff;
+    padding: 10px 20px;
+  }
+  &__swipers {
+    width: 50%;
+    height: 100%;
+  }
+  &__swiper {
+    &_small {
+      width: 25%;
+    }
   }
 }

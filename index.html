@@ -4,6 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Транс Сиб Трал</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <link rel="stylesheet" href="./styles/styles.css" />
   </head>
 
@@ -76,7 +82,9 @@
                 </div>
               </li>
             </ul>
-            <button class="hero__button">Отправить заявку</button>
+            <button class="hero__button open-form-button">
+              Отправить заявку
+            </button>
           </div>
         </div>
       </section>
@@ -84,12 +92,104 @@
       <section class="section services">
         <div class="container services__container">
           <h2 class="title services__title">
-            Перевозка крупногабаритных и тяжеловесных грузов
+            Перевозка <br />
+            крупногабаритных и тяжеловесных грузов
           </h2>
 
           <ul class="services__card-list">
             <li class="services__card-item card">
-              <img src="" alt="" class="card__image" />
+              <div class="card__swipers">
+                <div class="swiper card-swiper card__swiper">
+                  <div class="swiper-wrapper">
+                    <img
+                      src="./assets/images/swiper-content/1.jpg"
+                      alt=""
+                      class="swiper-slide card__image"
+                    />
+                    <img
+                      src="./assets/images/swiper-content/2.jpg"
+                      alt=""
+                      class="swiper-slide card__image"
+                    />
+                    <img
+                      src="./assets/images/swiper-content/3.jpg"
+                      alt=""
+                      class="swiper-slide card__image"
+                    />
+                    <img
+                      src="./assets/images/swiper-content/4.jpg"
+                      alt=""
+                      class="swiper-slide card__image"
+                    />
+                    <img
+                      src="./assets/images/swiper-content/5.jpg"
+                      alt=""
+                      class="swiper-slide card__image"
+                    />
+                    <img
+                      src="./assets/images/swiper-content/6.jpg"
+                      alt=""
+                      class="swiper-slide card__image"
+                    />
+                    <img
+                      src="./assets/images/swiper-content/7.jpg"
+                      alt=""
+                      class="swiper-slide card__image"
+                    />
+                    <img
+                      src="./assets/images/swiper-content/8.jpg"
+                      alt=""
+                      class="swiper-slide card__image"
+                    />
+                  </div>
+                </div>
+                <div
+                  class="swiper card-swiper-small card__swiper card__swiper_small"
+                >
+                  <div class="swiper-wrapper">
+                    <img
+                      src="./assets/images/swiper-content/1.jpg"
+                      alt=""
+                      class="swiper-slide card__image"
+                    />
+                    <img
+                      src="./assets/images/swiper-content/2.jpg"
+                      alt=""
+                      class="swiper-slide card__image"
+                    />
+                    <img
+                      src="./assets/images/swiper-content/3.jpg"
+                      alt=""
+                      class="swiper-slide card__image"
+                    />
+                    <img
+                      src="./assets/images/swiper-content/4.jpg"
+                      alt=""
+                      class="swiper-slide card__image"
+                    />
+                    <img
+                      src="./assets/images/swiper-content/5.jpg"
+                      alt=""
+                      class="swiper-slide card__image"
+                    />
+                    <img
+                      src="./assets/images/swiper-content/6.jpg"
+                      alt=""
+                      class="swiper-slide card__image"
+                    />
+                    <img
+                      src="./assets/images/swiper-content/7.jpg"
+                      alt=""
+                      class="swiper-slide card__image"
+                    />
+                    <img
+                      src="./assets/images/swiper-content/8.jpg"
+                      alt=""
+                      class="swiper-slide card__image"
+                    />
+                  </div>
+                </div>
+              </div>
               <div class="card__content">
                 <h3 class="card__title">ТРАЛЫ: 40т 60т 80т 120т</h3>
                 <p class="card__text">
@@ -199,7 +299,7 @@
 
       <section class="section rent">
         <div class="container rent__container">
-          <h2 class="title additional__title">АРЕНДА СПЕЦТЕХНИКИ</h2>
+          <h2 class="title rent__title">АРЕНДА СПЕЦТЕХНИКИ</h2>
           <ul class="additional__list">
             <li class="additional__item card">
               <img src="" alt="" class="card__image" />
@@ -329,5 +429,52 @@
         </div>
       </div>
     </footer>
+
+    <div class="form">
+      <div class="form__container">
+        <div class="form__title-content">
+          <h2 class="form__title title">форма обратного вызова</h2>
+          <button class="form__close-button"></button>
+        </div>
+        <form class="form__content">
+          <input
+            name="name"
+            type="text"
+            class="form__input"
+            placeholder="Имя"
+          />
+          <input
+            name="phone"
+            type="tel"
+            class="form__input"
+            placeholder="Номер телефона"
+          />
+          <input
+            name="cars"
+            type="text"
+            class="form__input"
+            placeholder="Интересующая техника"
+          />
+          <textarea
+            name="description"
+            class="form__input form__input_big"
+            rows="5"
+            placeholder="Текст сообщения"
+          ></textarea>
+          <button type="submit" class="form__submit-button">
+            отправить заявку
+          </button>
+        </form>
+        <div class="form__social form-social">
+          <h3 class="form-social__title">связаться через месседжеры</h3>
+          <div class="form-social__content">
+            <img src="" alt="whatsapp" class="form-social__image" />
+            <img src="" alt="viber" class="form-social__image" />
+            <img src="" alt="telegram" class="form-social__image" />
+          </div>
+        </div>
+      </div>
+    </div>
   </body>
+  <script src="script.js"></script>
 </html>
