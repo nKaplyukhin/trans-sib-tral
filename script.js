@@ -2,10 +2,12 @@ const form = document.querySelector(".form");
 
 const openForm = () => {
   form.classList.add("form_active");
+  document.body.style.overflow = "hidden";
 };
 
 const closeForm = () => {
   form.classList.remove("form_active");
+  document.body.style.overflow = null;
 };
 
 const addFormButtonsListener = () => {
@@ -48,5 +50,38 @@ const initializeSwipers = () => {
   });
 };
 
+const orderButtonsListener = () => {
+  const orderButtons = document.querySelectorAll(".card__button");
+
+  orderButtons.forEach((orderButton) => {
+    orderButton.addEventListener("click", openForm);
+  });
+};
+
+const burgerInitializer = () => {
+  const burgerOpenButton = document.querySelector(".burger__button");
+  const burgerCloseButton = document.querySelector(".burger__close-button");
+  const burgerLinks = document.querySelectorAll(".burger__link");
+  const burger = document.querySelector(".burger__menu");
+
+  const closeBurger = () => {
+    burger.classList.remove("burger_active");
+  };
+
+  burgerLinks.forEach((burgerLink) => {
+    burgerLink.addEventListener("click", () => {
+      closeBurger();
+    });
+  });
+
+  burgerOpenButton.addEventListener("click", () => {
+    burger.classList.add("burger_active");
+  });
+
+  burgerCloseButton.addEventListener("click", closeBurger);
+};
+
 addFormButtonsListener();
 initializeSwipers();
+orderButtonsListener();
+burgerInitializer();

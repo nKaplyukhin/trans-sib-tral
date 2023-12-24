@@ -12,6 +12,15 @@
     display: flex;
     gap: 30px;
   }
+  @include mobile {
+    &__card-list {
+      margin-bottom: 30px;
+    }
+    &__info-list {
+      flex-direction: column;
+      gap: 20px;
+    }
+  }
 }
 
 .info-card {

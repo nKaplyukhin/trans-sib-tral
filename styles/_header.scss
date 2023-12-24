@@ -2,7 +2,12 @@
 
 .header {
   padding: 30px 0;
+  position: sticky;
+  top: 0;
+  background-color: #fff;
+  z-index: 10;
   &__nav {
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -35,8 +40,120 @@
   }
   @include mobile {
     padding: 10px 0;
-    &__list {
-      display: none;
+    padding-top: 20px;
+    &__nav {
+      flex-direction: column;
+      align-items: start;
+      gap: 5px;
     }
+    &__item {
+      display: none;
+      &_city {
+        display: block;
+      }
+    }
+  }
+}
+
+.burger {
+  &__button {
+    display: none;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    width: 35px;
+    height: 25px;
+    transform: translateY(-50%);
+    animation: burger-anim 1.5s ease-out infinite;
+    &::before,
+    &::after,
+    &_symbol {
+      content: "";
+      position: absolute;
+      left: 0;
+      right: 0;
+      height: 5px;
+      background-color: $black-color;
+    }
+
+    &_symbol {
+      top: 50%;
+      transform: translateY(-50%);
+    }
+
+    &::before {
+      top: 0;
+    }
+
+    &::after {
+      bottom: 0;
+    }
+
+    @include mobile {
+      display: flex;
+    }
+  }
+  &__menu {
+    position: fixed;
+    top: 0;
+    left: 50%;
+    right: 0;
+    height: 100%;
+    background-color: #efefef;
+    padding: 10px;
+    padding-bottom: 30px;
+    transition: opacity 0.3s ease-out;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+    gap: 10px;
+    transition: transform .3s ease-out;
+    transform: scaleX(0);
+    transform-origin: right;
+  }
+  &_active {
+    transform: scaleX(1);
+  }
+  &__list {
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  &__item {
+    font-size: 1.4em;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  &__close-button {
+    justify-self: flex-end;
+    width: 20px !important;
+    height: 20px !important;
+  }
+  &__numbers {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    font-size: 1.5em;
+    gap: 10px;
+    margin-top: auto;
+  }
+  &__social {
+    margin: 0 !important;
+  }
+}
+
+@keyframes burger-anim {
+  0% {
+    transform: translateY(-50%) scale(1);
+  }
+
+  50% {
+    transform: translateY(-50%) scale(1.05);
+  }
+
+  100% {
+    transform: translateY(-50%) scale(1);
   }
 }

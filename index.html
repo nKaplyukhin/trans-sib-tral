@@ -1,1168 +1,711 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Транс Сиб Трал</title>
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
-    />
 
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <link rel="stylesheet" href="./styles/styles.css" />
-  </head>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Транс Сиб Трал</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
-  <body>
-    <header class="header">
-      <div class="container header__container">
-        <nav class="header__nav">
-          <ul class="header__list">
-            <li class="header__item header__item_city">Красноярск</li>
-            <li class="header__item">
-              <a href="#" class="header__link">Грузоперевозки</a>
-            </li>
-            <li class="header__item">
-              <a href="#" class="header__link">Спецтехника</a>
-            </li>
-            <li class="header__item">
-              <a href="#" class="header__link">Доп. услуги</a>
-            </li>
-            <li class="header__item">
-              <a href="#" class="header__link">Контакты</a>
-            </li>
-          </ul>
-         <div class="header__">
-          <a href="#" class="header__number-link">+7 (908) 212-14-88</a>
-          <a href="#" class="header__number-link">+7 (923) 280-66-99</a>
-         </div>
-        </nav>
-      </div>
-    </header>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <link rel="stylesheet" href="./styles/styles.css" />
+</head>
 
-    <main class="main">
-      <section class="section hero">
-        <div class="container hero__container">
-          <h1 class="hero__title">Транс сиб трал</h1>
-          <img
-            src="./assets/images/hero-image.webp"
-            alt=""
-            class="hero__image"
-          />
-          <div class="hero__content">
-            <ul class="hero__list">
-              <li class="hero__item hero-item">
-                <img
-                  src="./assets/images/lightning-icon.png"
-                  alt="icon"
-                  class="hero-item__image"
-                />
-                <div class="hero-item__content">
-                  <p class="hero-item__text">Собственник</p>
-                  <p class="hero-item__text">база в г. Красноярск</p>
-                </div>
+<body>
+  <header class="header">
+    <div class="container header__container">
+      <nav class="header__nav">
+        <ul class="header__list">
+          <li class="header__item header__item_city">
+            <a href="#" class="header__link">Красноярск</a>
+          </li>
+          <li class="header__item">
+            <a href="#services" class="header__link">Грузоперевозки</a>
+          </li>
+          <li class="header__item">
+            <a href="#rent" class="header__link">Доп. услуги</a>
+          </li>
+          <li class="header__item">
+            <a href="#additional" class="header__link">Спецтехника</a>
+          </li>
+          <li class="header__item">
+            <a href="#footer" class="header__link">Контакты</a>
+          </li>
+        </ul>
+        <div class="header__numbers">
+          <a href="tel:+79082121488" class="header__number-link">+7 (908) 212-14-88</a>
+          <a href="tel:+79232806699" class="header__number-link">+7 (923) 280-66-99</a>
+        </div>
+        <div class="header__burger burger">
+          <button class="burger__button"><span class="burger__button_symbol"></span></button>
+          <div class="burger__menu">
+            <button class="burger__close-button close-button"></button>
+            <ul class="burger__list">
+              <li class="burger__item">
+                <a href="#services" class="burger__link">Грузоперевозки</a>
               </li>
-              <li class="hero__item hero-item">
-                <img
-                  src="./assets/images/mark-icon.png"
-                  alt="icon"
-                  class="hero-item__image"
-                />
-                <div class="hero-item__content">
-                  <p class="hero-item__text">По городу</p>
-                  <p class="hero-item__text">Межгород / по России</p>
-                </div>
+              <li class="burger__item">
+                <a href="#rent" class="burger__link">Доп. услуги</a>
               </li>
-              <li class="hero__item hero-item">
-                <img
-                  src="./assets/images/star-icon.png"
-                  alt="icon"
-                  class="hero-item__image"
-                />
-                <div class="hero-item__content">
-                  <p class="hero-item__text">с НДС</p>
-                  <p class="hero-item__text">без НДС / Наличные</p>
-                </div>
+              <li class="burger__item">
+                <a href="#additional" class="burger__link">Спецтехника</a>
+              </li>
+              <li class="burger__item">
+                <a href="#footer" class="burger__link">Контакты</a>
               </li>
             </ul>
-            <button class="hero__button open-form-button">
-              Отправить заявку
-            </button>
+            <div class="burger__numbers">
+              <a href="tel:+79082121488" class="burger__number-link">+7 (908) 212-14-88</a>
+              <a href="tel:+79232806699" class="burger__number-link">+7 (923) 280-66-99</a>
+            </div>
+            <div class="burger__social form-social">
+              <div class="form-social__content">
+                <a href="https://wa.me/+79082121488" class="form-social__link"><img
+                    src="./assets/images/whatsapp-black-icon.png" alt="whatsapp" class="form-social__image" /></a>
+                <a href="viber://chat?number=79082121488" class="form-social__link">
+                  <img src="./assets/images/viber-black-icon.png" alt="viber" class="form-social__image" /></a>
+                <a href="https://t.me/+79082121488" class="form-social__link">
+                  <img src="./assets/images/telegram-black-icon.png" alt="telegram" class="form-social__image" /></a>
+              </div>
+            </div>
           </div>
         </div>
-      </section>
+      </nav>
+    </div>
+  </header>
 
-      <section class="section services">
-        <div class="container services__container">
-          <h2 class="title services__title">
-            Перевозка <br />
-            крупногабаритных и тяжеловесных грузов
-          </h2>
-
-          <ul class="services__card-list">
-            <li class="services__card-item card">
-              <div class="card__swipers">
-                <div class="swiper swiper-big card__swiper">
-                  <div class="swiper-wrapper">
-                    <div class="swiper-slide card__image-container">
-                      <img
-                        src="./assets/images/swiper-content/1.jpg"
-                        alt=""
-                        class="swiper-slide card__image"
-                      />
-                    </div>
-                    <div class="swiper-slide card__image-container">
-                      <img
-                        src="./assets/images/swiper-content/2.jpg"
-                        alt=""
-                        class="swiper-slide card__image"
-                      />
-                    </div>
-                    <div class="swiper-slide card__image-container">
-                      <img
-                        src="./assets/images/swiper-content/3.jpg"
-                        alt=""
-                        class="swiper-slide card__image"
-                      />
-                    </div>
-                    <div class="swiper-slide card__image-container">
-                      <img
-                        src="./assets/images/swiper-content/4.jpg"
-                        alt=""
-                        class="swiper-slide card__image"
-                      />
-                    </div>
-                    <div class="swiper-slide card__image-container">
-                      <img
-                        src="./assets/images/swiper-content/5.jpg"
-                        alt=""
-                        class="swiper-slide card__image"
-                      />
-                    </div>
-                    <div class="swiper-slide card__image-container">
-                      <img
-                        src="./assets/images/swiper-content/6.jpg"
-                        alt=""
-                        class="swiper-slide card__image"
-                      />
-                    </div>
-                    <div class="swiper-slide card__image-container">
-                      <img
-                        src="./assets/images/swiper-content/7.jpg"
-                        alt=""
-                        class="swiper-slide card__image"
-                      />
-                    </div>
-                    <div class="swiper-slide card__image-container">
-                      <img
-                        src="./assets/images/swiper-content/8.jpg"
-                        alt=""
-                        class="swiper-slide card__image"
-                      />
-                    </div>
-                  </div>
-                </div>
-                <div
-                  thumbsSlider=""
-                  class="swiper swiper-small card__swiper card__swiper_small"
-                >
-                  <div class="swiper-wrapper">
-                    <div class="swiper-slide card__image-container">
-                      <img
-                        src="./assets/images/swiper-content/1.jpg"
-                        alt=""
-                        class="swiper-slide card__image"
-                      />
-                    </div>
-                    <div class="swiper-slide card__image-container">
-                      <img
-                        src="./assets/images/swiper-content/2.jpg"
-                        alt=""
-                        class="swiper-slide card__image"
-                      />
-                    </div>
-                    <div class="swiper-slide card__image-container">
-                      <img
-                        src="./assets/images/swiper-content/3.jpg"
-                        alt=""
-                        class="swiper-slide card__image"
-                      />
-                    </div>
-                    <div class="swiper-slide card__image-container">
-                      <img
-                        src="./assets/images/swiper-content/4.jpg"
-                        alt=""
-                        class="swiper-slide card__image"
-                      />
-                    </div>
-                    <div class="swiper-slide card__image-container">
-                      <img
-                        src="./assets/images/swiper-content/5.jpg"
-                        alt=""
-                        class="swiper-slide card__image"
-                      />
-                    </div>
-                    <div class="swiper-slide card__image-container">
-                      <img
-                        src="./assets/images/swiper-content/6.jpg"
-                        alt=""
-                        class="swiper-slide card__image"
-                      />
-                    </div>
-                    <div class="swiper-slide card__image-container">
-                      <img
-                        src="./assets/images/swiper-content/7.jpg"
-                        alt=""
-                        class="swiper-slide card__image"
-                      />
-                    </div>
-                    <div class="swiper-slide card__image-container">
-                      <img
-                        src="./assets/images/swiper-content/8.jpg"
-                        alt=""
-                        class="swiper-slide card__image"
-                      />
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="card__content">
-                <h3 class="card__title">
-                  <span class="card__title_red">ТРАЛЫ</span> 40т 60т 80т 120т
-                </h3>
-                <p class="card__text">
-                  Услуги тралов в сцепке с тягачами <b>6х6</b> и 6х4 по
-                  Красноярску, Красноярскому краю и России. Перевезем габаритный
-                  и негабаритный груз
-                  <b>до 120 т. и длинной до 25 м.</b>
-                </p>
-                <p class="card__text">
-                  В парке имеются
-                  <b>негабаритные тралы шириной 3м</b>. А также же шириной 2,5м
-                  и уширителями до 3м.
-                </p>
-                <button class="card__button">Заказать</button>
+  <main class="main">
+    <section class="section hero">
+      <div class="container hero__container">
+        <h1 class="hero__title">Транс сиб трал</h1>
+        <img src="./assets/images/hero-image.webp" alt="" class="hero__image" />
+        <div class="hero__content">
+          <ul class="hero__list">
+            <li class="hero__item hero-item">
+              <img src="./assets/images/lightning-icon.png" alt="icon" class="hero-item__image" />
+              <div class="hero-item__content">
+                <p class="hero-item__text">Собственник</p>
+                <p class="hero-item__text">база в г. Красноярск</p>
               </div>
             </li>
-
-            <li class="services__card-item card">
-              <div class="card__swipers swipers">
-                <div class="swiper swiper-big card__swiper">
-                  <div class="swiper-wrapper">
-                    <div class="swiper-slide card__image-container">
-                      <img
-                        src="./assets/images/swiper-content/1.jpg"
-                        alt=""
-                        class="swiper-slide card__image"
-                      />
-                    </div>
-                    <div class="swiper-slide card__image-container">
-                      <img
-                        src="./assets/images/swiper-content/2.jpg"
-                        alt=""
-                        class="swiper-slide card__image"
-                      />
-                    </div>
-                    <div class="swiper-slide card__image-container">
-                      <img
-                        src="./assets/images/swiper-content/3.jpg"
-                        alt=""
-                        class="swiper-slide card__image"
-                      />
-                    </div>
-                    <div class="swiper-slide card__image-container">
-                      <img
-                        src="./assets/images/swiper-content/4.jpg"
-                        alt=""
-                        class="swiper-slide card__image"
-                      />
-                    </div>
-                    <div class="swiper-slide card__image-container">
-                      <img
-                        src="./assets/images/swiper-content/5.jpg"
-                        alt=""
-                        class="swiper-slide card__image"
-                      />
-                    </div>
-                    <div class="swiper-slide card__image-container">
-                      <img
-                        src="./assets/images/swiper-content/6.jpg"
-                        alt=""
-                        class="swiper-slide card__image"
-                      />
-                    </div>
-                    <div class="swiper-slide card__image-container">
-                      <img
-                        src="./assets/images/swiper-content/7.jpg"
-                        alt=""
-                        class="swiper-slide card__image"
-                      />
-                    </div>
-                    <div class="swiper-slide card__image-container">
-                      <img
-                        src="./assets/images/swiper-content/8.jpg"
-                        alt=""
-                        class="swiper-slide card__image"
-                      />
-                    </div>
-                  </div>
-                </div>
-                <div
-                  thumbsSlider=""
-                  class="swiper swiper-small card__swiper card__swiper_small"
-                >
-                  <div class="swiper-wrapper">
-                    <div class="swiper-slide card__image-container">
-                      <img
-                        src="./assets/images/swiper-content/1.jpg"
-                        alt=""
-                        class="swiper-slide card__image"
-                      />
-                    </div>
-                    <div class="swiper-slide card__image-container">
-                      <img
-                        src="./assets/images/swiper-content/2.jpg"
-                        alt=""
-                        class="swiper-slide card__image"
-                      />
-                    </div>
-                    <div class="swiper-slide card__image-container">
-                      <img
-                        src="./assets/images/swiper-content/3.jpg"
-                        alt=""
-                        class="swiper-slide card__image"
-                      />
-                    </div>
-                    <div class="swiper-slide card__image-container">
-                      <img
-                        src="./assets/images/swiper-content/4.jpg"
-                        alt=""
-                        class="swiper-slide card__image"
-                      />
-                    </div>
-                    <div class="swiper-slide card__image-container">
-                      <img
-                        src="./assets/images/swiper-content/5.jpg"
-                        alt=""
-                        class="swiper-slide card__image"
-                      />
-                    </div>
-                    <div class="swiper-slide card__image-container">
-                      <img
-                        src="./assets/images/swiper-content/6.jpg"
-                        alt=""
-                        class="swiper-slide card__image"
-                      />
-                    </div>
-                    <div class="swiper-slide card__image-container">
-                      <img
-                        src="./assets/images/swiper-content/7.jpg"
-                        alt=""
-                        class="swiper-slide card__image"
-                      />
-                    </div>
-                    <div class="swiper-slide card__image-container">
-                      <img
-                        src="./assets/images/swiper-content/8.jpg"
-                        alt=""
-                        class="swiper-slide card__image"
-                      />
-                    </div>
-                  </div>
-                </div>
+            <li class="hero__item hero-item">
+              <img src="./assets/images/mark-icon.png" alt="icon" class="hero-item__image" />
+              <div class="hero-item__content">
+                <p class="hero-item__text">По городу</p>
+                <p class="hero-item__text">Межгород / по России</p>
               </div>
-              <div class="card__content">
-                <h3 class="card__title">
-                  <span class="card__title_red">БОРТОВЫЕ ПОЛУПРИЦЕПЫ:</span
-                  >БОРТОВЫЕ ПОЛУПРИЦЕПЫ: 12м 13,6м 16м до 30т
-                </h3>
-                <p class="card__text">
-                  Услуги длинномера 12 м. до 20т., 13,6м до 20т и
-                  <b>16м до 30т</b> в сцепке с тягачами <b>6х6</b> и 6х4 по
-                  Красноярску, Красноярскому краю и России
-                </p>
-                <p class="card__text">
-                  Перевезем строительные и крупногабаритные грузы, а также
-                  товары, которые не разрушаются под воздействием
-                  неблагоприятных факторов внешней среды.
-                </p>
-                <button class="card__button">Заказать</button>
+            </li>
+            <li class="hero__item hero-item">
+              <img src="./assets/images/star-icon.png" alt="icon" class="hero-item__image" />
+              <div class="hero-item__content">
+                <p class="hero-item__text">с НДС</p>
+                <p class="hero-item__text">без НДС / Наличные</p>
               </div>
             </li>
           </ul>
+          <button class="hero__button open-form-button">
+            Отправить заявку
+          </button>
+        </div>
+      </div>
+    </section>
 
-          <ul class="services__info-list">
-            <li class="services__info-item info-card">
-              <div class="info-card__image info-card-image">
-                <div class="info-card-image__container">
-                  <img
-                    alt="Галочка"
-                    src="./assets/images/mark2-icon.png"
-                    class="info-card-image__img"
-                  />
+    <section class="section services" id="services">
+      <div class="container services__container">
+        <h2 class="title services__title">
+          Перевозка <br />
+          крупногабаритных и тяжеловесных грузов
+        </h2>
+
+        <ul class="services__card-list">
+          <li class="services__card-item card">
+            <div class="card__swipers">
+              <div class="swiper swiper-big card__swiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide card__image-container">
+                    <img src="./assets/images/swiper-content/tral/1.jpg" alt="" class="card__image" />
+                  </div>
+                  <div class="swiper-slide card__image-container">
+                    <img src="./assets/images/swiper-content/tral/2.jpg" alt="" class="card__image" />
+                  </div>
+                  <div class="swiper-slide card__image-container">
+                    <img src="./assets/images/swiper-content/tral/3.jpg" alt="" class="card__image" />
+                  </div>
+                  <div class="swiper-slide card__image-container">
+                    <img src="./assets/images/swiper-content/tral/4.jpg" alt="" class="card__image" />
+                  </div>
+                  <div class="swiper-slide card__image-container">
+                    <img src="./assets/images/swiper-content/tral/5.jpg" alt="" class="card__image" />
+                  </div>
+                  <div class="swiper-slide card__image-container">
+                    <img src="./assets/images/swiper-content/tral/6.jpg" alt="" class="card__image" />
+                  </div>
+                  <div class="swiper-slide card__image-container">
+                    <img src="./assets/images/swiper-content/tral/7.jpg" alt="" class="card__image" />
+                  </div>
+                  <div class="swiper-slide card__image-container">
+                    <img src="./assets/images/swiper-content/tral/8.jpg" alt="" class="card__image" />
+                  </div>
                 </div>
               </div>
-              <h3 class="info-card__title">Негабаритные грузоперевозки</h3>
-              <p class="info-card__text">
-                Готовые разрешения на негабарит по г. Красноярску Готовы
-                рассмотреть <b>тяжелые</b> и <b>объемные</b> грузы
+              <div thumbsSlider="" class="swiper swiper-small card__swiper card__swiper_small">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide card__image-container">
+                    <img src="./assets/images/swiper-content/tral/1.jpg" alt="" class="card__image" />
+                  </div>
+                  <div class="swiper-slide card__image-container">
+                    <img src="./assets/images/swiper-content/tral/2.jpg" alt="" class="card__image" />
+                  </div>
+                  <div class="swiper-slide card__image-container">
+                    <img src="./assets/images/swiper-content/tral/3.jpg" alt="" class="card__image" />
+                  </div>
+                  <div class="swiper-slide card__image-container">
+                    <img src="./assets/images/swiper-content/tral/4.jpg" alt="" class="card__image" />
+                  </div>
+                  <div class="swiper-slide card__image-container">
+                    <img src="./assets/images/swiper-content/tral/5.jpg" alt="" class="card__image" />
+                  </div>
+                  <div class="swiper-slide card__image-container">
+                    <img src="./assets/images/swiper-content/tral/6.jpg" alt="" class="card__image" />
+                  </div>
+                  <div class="swiper-slide card__image-container">
+                    <img src="./assets/images/swiper-content/tral/7.jpg" alt="" class="card__image" />
+                  </div>
+                  <div class="swiper-slide card__image-container">
+                    <img src="./assets/images/swiper-content/tral/8.jpg" alt="" class="card__image" />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card__content">
+              <h3 class="card__title">
+                <span class="card__title_red">ТРАЛЫ</span> 40т 60т 80т 120т
+              </h3>
+              <p class="card__text">
+                Услуги тралов в сцепке с тягачами <b>6х6</b> и 6х4 по
+                Красноярску, Красноярскому краю и России. Перевезем габаритный
+                и негабаритный груз
+                <b>до 120 т. и длинной до 25 м.</b>
               </p>
-            </li>
-            <li class="services__info-item info-card">
-              <div class="info-card__image info-card-image">
-                <div class="info-card-image__container">
-                  <img
-                    alt="Галочка"
-                    src="./assets/images/mark2-icon.png"
-                    class="info-card-image__img"
-                  />
-                </div>
-              </div>
-              <h3 class="info-card__title">Сложные маршруты</h3>
-              <p class="info-card__text">
-                Опытные водители и полноприводные тягачи доставят груз по
-                <b>сложным маршрутам</b> и по <b>зимнику</b>
+              <p class="card__text">
+                В парке имеются
+                <b>негабаритные тралы шириной 3м</b>. А также же шириной 2,5м
+                и уширителями до 3м.
               </p>
-            </li>
-          </ul>
-        </div>
-      </section>
+              <button class="card__button">Заказать</button>
+            </div>
+          </li>
 
-      <section class="section additional">
-        <div class="container additional__container">
-          <h2 class="title additional__title">ДОПОЛНИТЕЛЬНЫЕ УСЛУГИ</h2>
-          <ul class="additional__list">
-            <li class="additional__item card">
-              <div class="card__swipers">
-                <div class="swiper swiper-big card__swiper">
-                  <div class="swiper-wrapper">
-                    <div class="swiper-slide card__image-container">
-                      <img
-                        src="./assets/images/swiper-content/1.jpg"
-                        alt=""
-                        class="swiper-slide card__image"
-                      />
-                    </div>
-                    <div class="swiper-slide card__image-container">
-                      <img
-                        src="./assets/images/swiper-content/2.jpg"
-                        alt=""
-                        class="swiper-slide card__image"
-                      />
-                    </div>
-                    <div class="swiper-slide card__image-container">
-                      <img
-                        src="./assets/images/swiper-content/3.jpg"
-                        alt=""
-                        class="swiper-slide card__image"
-                      />
-                    </div>
-                    <div class="swiper-slide card__image-container">
-                      <img
-                        src="./assets/images/swiper-content/4.jpg"
-                        alt=""
-                        class="swiper-slide card__image"
-                      />
-                    </div>
-                    <div class="swiper-slide card__image-container">
-                      <img
-                        src="./assets/images/swiper-content/5.jpg"
-                        alt=""
-                        class="swiper-slide card__image"
-                      />
-                    </div>
-                    <div class="swiper-slide card__image-container">
-                      <img
-                        src="./assets/images/swiper-content/6.jpg"
-                        alt=""
-                        class="swiper-slide card__image"
-                      />
-                    </div>
-                    <div class="swiper-slide card__image-container">
-                      <img
-                        src="./assets/images/swiper-content/7.jpg"
-                        alt=""
-                        class="swiper-slide card__image"
-                      />
-                    </div>
-                    <div class="swiper-slide card__image-container">
-                      <img
-                        src="./assets/images/swiper-content/8.jpg"
-                        alt=""
-                        class="swiper-slide card__image"
-                      />
-                    </div>
+          <li class="services__card-item card">
+            <div class="card__swipers swipers">
+              <div class="swiper swiper-big card__swiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide card__image-container">
+                    <img src="./assets/images/swiper-content/1.jpg" alt="" class="card__image" />
                   </div>
-                </div>
-                <div
-                  thumbsSlider=""
-                  class="swiper swiper-small card__swiper card__swiper_small"
-                >
-                  <div class="swiper-wrapper">
-                    <div class="swiper-slide card__image-container">
-                      <img
-                        src="./assets/images/swiper-content/1.jpg"
-                        alt=""
-                        class="swiper-slide card__image"
-                      />
-                    </div>
-                    <div class="swiper-slide card__image-container">
-                      <img
-                        src="./assets/images/swiper-content/2.jpg"
-                        alt=""
-                        class="swiper-slide card__image"
-                      />
-                    </div>
-                    <div class="swiper-slide card__image-container">
-                      <img
-                        src="./assets/images/swiper-content/3.jpg"
-                        alt=""
-                        class="swiper-slide card__image"
-                      />
-                    </div>
-                    <div class="swiper-slide card__image-container">
-                      <img
-                        src="./assets/images/swiper-content/4.jpg"
-                        alt=""
-                        class="swiper-slide card__image"
-                      />
-                    </div>
-                    <div class="swiper-slide card__image-container">
-                      <img
-                        src="./assets/images/swiper-content/5.jpg"
-                        alt=""
-                        class="swiper-slide card__image"
-                      />
-                    </div>
-                    <div class="swiper-slide card__image-container">
-                      <img
-                        src="./assets/images/swiper-content/6.jpg"
-                        alt=""
-                        class="swiper-slide card__image"
-                      />
-                    </div>
-                    <div class="swiper-slide card__image-container">
-                      <img
-                        src="./assets/images/swiper-content/7.jpg"
-                        alt=""
-                        class="swiper-slide card__image"
-                      />
-                    </div>
-                    <div class="swiper-slide card__image-container">
-                      <img
-                        src="./assets/images/swiper-content/8.jpg"
-                        alt=""
-                        class="swiper-slide card__image"
-                      />
-                    </div>
+                  <div class="swiper-slide card__image-container">
+                    <img src="./assets/images/swiper-content/2.jpg" alt="" class="card__image" />
+                  </div>
+                  <div class="swiper-slide card__image-container">
+                    <img src="./assets/images/swiper-content/3.jpg" alt="" class="card__image" />
+                  </div>
+                  <div class="swiper-slide card__image-container">
+                    <img src="./assets/images/swiper-content/4.jpg" alt="" class="card__image" />
+                  </div>
+                  <div class="swiper-slide card__image-container">
+                    <img src="./assets/images/swiper-content/5.jpg" alt="" class="card__image" />
+                  </div>
+                  <div class="swiper-slide card__image-container">
+                    <img src="./assets/images/swiper-content/6.jpg" alt="" class="card__image" />
+                  </div>
+                  <div class="swiper-slide card__image-container">
+                    <img src="./assets/images/swiper-content/7.jpg" alt="" class="card__image" />
+                  </div>
+                  <div class="swiper-slide card__image-container">
+                    <img src="./assets/images/swiper-content/8.jpg" alt="" class="card__image" />
                   </div>
                 </div>
               </div>
-              <div class="card__content">
-                <h3 class="card__title">ПРИ НЕОБХОДИМОСТИ:</h3>
-                <ul class="card__list">
-                  <li class="card__item">
-                    Такелажные работы для тяжелых и объемных грузов
-                  </li>
-                  <li class="card__item">
-                    Такелажные работы от 70 тонн и выше
-                  </li>
-                  <li class="card__item">Загон и сгон техники на трал</li>
-                  <li class="card__item">Выезд на объект для осмотра груза</li>
-                  <li class="card__item">
-                    Сопровождение груза по всему маршруту
-                  </li>
-                  <li class="card__item">Оформление Разрешений на перевозку</li>
-                  <li class="card__item">
-                    Оформление Спецпроектов на перевозку
-                  </li>
-                </ul>
-                <button class="card__button">Заказать</button>
+              <div thumbsSlider="" class="swiper swiper-small card__swiper card__swiper_small">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide card__image-container">
+                    <img src="./assets/images/swiper-content/1.jpg" alt="" class="card__image" />
+                  </div>
+                  <div class="swiper-slide card__image-container">
+                    <img src="./assets/images/swiper-content/2.jpg" alt="" class="card__image" />
+                  </div>
+                  <div class="swiper-slide card__image-container">
+                    <img src="./assets/images/swiper-content/3.jpg" alt="" class="card__image" />
+                  </div>
+                  <div class="swiper-slide card__image-container">
+                    <img src="./assets/images/swiper-content/4.jpg" alt="" class="card__image" />
+                  </div>
+                  <div class="swiper-slide card__image-container">
+                    <img src="./assets/images/swiper-content/5.jpg" alt="" class="card__image" />
+                  </div>
+                  <div class="swiper-slide card__image-container">
+                    <img src="./assets/images/swiper-content/6.jpg" alt="" class="card__image" />
+                  </div>
+                  <div class="swiper-slide card__image-container">
+                    <img src="./assets/images/swiper-content/7.jpg" alt="" class="card__image" />
+                  </div>
+                  <div class="swiper-slide card__image-container">
+                    <img src="./assets/images/swiper-content/8.jpg" alt="" class="card__image" />
+                  </div>
+                </div>
               </div>
-            </li>
-          </ul>
-        </div>
-      </section>
+            </div>
+            <div class="card__content">
+              <h3 class="card__title">
+                <span class="card__title_red">БОРТОВЫЕ ПОЛУПРИЦЕПЫ:</span> 12м 13,6м 16м до 30т
+              </h3>
+              <p class="card__text">
+                Услуги длинномера 12 м. до 20т., 13,6м до 20т и
+                <b>16м до 30т</b> в сцепке с тягачами <b>6х6</b> и 6х4 по
+                Красноярску, Красноярскому краю и России
+              </p>
+              <p class="card__text">
+                Перевезем строительные и крупногабаритные грузы, а также
+                товары, которые не разрушаются под воздействием
+                неблагоприятных факторов внешней среды.
+              </p>
+              <button class="card__button">Заказать</button>
+            </div>
+          </li>
+        </ul>
 
-      <section class="section rent">
-        <div class="container rent__container">
-          <h2 class="title rent__title">АРЕНДА СПЕЦТЕХНИКИ</h2>
-          <ul class="additional__list">
-            <li class="additional__item card">
-              <div class="card__swipers">
-                <div class="swiper swiper-big card__swiper">
-                  <div class="swiper-wrapper">
-                    <div class="swiper-slide card__image-container">
-                      <img
-                        src="./assets/images/swiper-content/1.jpg"
-                        alt=""
-                        class="swiper-slide card__image"
-                      />
-                    </div>
-                    <div class="swiper-slide card__image-container">
-                      <img
-                        src="./assets/images/swiper-content/2.jpg"
-                        alt=""
-                        class="swiper-slide card__image"
-                      />
-                    </div>
-                    <div class="swiper-slide card__image-container">
-                      <img
-                        src="./assets/images/swiper-content/3.jpg"
-                        alt=""
-                        class="swiper-slide card__image"
-                      />
-                    </div>
-                    <div class="swiper-slide card__image-container">
-                      <img
-                        src="./assets/images/swiper-content/4.jpg"
-                        alt=""
-                        class="swiper-slide card__image"
-                      />
-                    </div>
-                    <div class="swiper-slide card__image-container">
-                      <img
-                        src="./assets/images/swiper-content/5.jpg"
-                        alt=""
-                        class="swiper-slide card__image"
-                      />
-                    </div>
-                    <div class="swiper-slide card__image-container">
-                      <img
-                        src="./assets/images/swiper-content/6.jpg"
-                        alt=""
-                        class="swiper-slide card__image"
-                      />
-                    </div>
-                    <div class="swiper-slide card__image-container">
-                      <img
-                        src="./assets/images/swiper-content/7.jpg"
-                        alt=""
-                        class="swiper-slide card__image"
-                      />
-                    </div>
-                    <div class="swiper-slide card__image-container">
-                      <img
-                        src="./assets/images/swiper-content/8.jpg"
-                        alt=""
-                        class="swiper-slide card__image"
-                      />
-                    </div>
-                  </div>
-                </div>
-                <div
-                  thumbsSlider=""
-                  class="swiper swiper-small card__swiper card__swiper_small"
-                >
-                  <div class="swiper-wrapper">
-                    <div class="swiper-slide card__image-container">
-                      <img
-                        src="./assets/images/swiper-content/1.jpg"
-                        alt=""
-                        class="swiper-slide card__image"
-                      />
-                    </div>
-                    <div class="swiper-slide card__image-container">
-                      <img
-                        src="./assets/images/swiper-content/2.jpg"
-                        alt=""
-                        class="swiper-slide card__image"
-                      />
-                    </div>
-                    <div class="swiper-slide card__image-container">
-                      <img
-                        src="./assets/images/swiper-content/3.jpg"
-                        alt=""
-                        class="swiper-slide card__image"
-                      />
-                    </div>
-                    <div class="swiper-slide card__image-container">
-                      <img
-                        src="./assets/images/swiper-content/4.jpg"
-                        alt=""
-                        class="swiper-slide card__image"
-                      />
-                    </div>
-                    <div class="swiper-slide card__image-container">
-                      <img
-                        src="./assets/images/swiper-content/5.jpg"
-                        alt=""
-                        class="swiper-slide card__image"
-                      />
-                    </div>
-                    <div class="swiper-slide card__image-container">
-                      <img
-                        src="./assets/images/swiper-content/6.jpg"
-                        alt=""
-                        class="swiper-slide card__image"
-                      />
-                    </div>
-                    <div class="swiper-slide card__image-container">
-                      <img
-                        src="./assets/images/swiper-content/7.jpg"
-                        alt=""
-                        class="swiper-slide card__image"
-                      />
-                    </div>
-                    <div class="swiper-slide card__image-container">
-                      <img
-                        src="./assets/images/swiper-content/8.jpg"
-                        alt=""
-                        class="swiper-slide card__image"
-                      />
-                    </div>
-                  </div>
-                </div>
+        <ul class="services__info-list">
+          <li class="services__info-item info-card">
+            <div class="info-card__image info-card-image">
+              <div class="info-card-image__container">
+                <img alt="Галочка" src="./assets/images/mark2-icon.png" class="info-card-image__img" />
               </div>
-              <div class="card__content">
-                <h3 class="card__title">ДЭК 323</h3>
-                <button class="card__button">Заказать</button>
+            </div>
+            <h3 class="info-card__title">Негабаритные грузоперевозки</h3>
+            <p class="info-card__text">
+              Готовые разрешения на негабарит по г. Красноярску Готовы
+              рассмотреть <b>тяжелые</b> и <b>объемные</b> грузы
+            </p>
+          </li>
+          <li class="services__info-item info-card">
+            <div class="info-card__image info-card-image">
+              <div class="info-card-image__container">
+                <img alt="Галочка" src="./assets/images/mark2-icon.png" class="info-card-image__img" />
               </div>
-            </li>
-            <li class="additional__item card">
-              <div class="card__swipers">
-                <div class="swiper swiper-big card__swiper">
-                  <div class="swiper-wrapper">
-                    <div class="swiper-slide card__image-container">
-                      <img
-                        src="./assets/images/swiper-content/1.jpg"
-                        alt=""
-                        class="swiper-slide card__image"
-                      />
-                    </div>
-                    <div class="swiper-slide card__image-container">
-                      <img
-                        src="./assets/images/swiper-content/2.jpg"
-                        alt=""
-                        class="swiper-slide card__image"
-                      />
-                    </div>
-                    <div class="swiper-slide card__image-container">
-                      <img
-                        src="./assets/images/swiper-content/3.jpg"
-                        alt=""
-                        class="swiper-slide card__image"
-                      />
-                    </div>
-                    <div class="swiper-slide card__image-container">
-                      <img
-                        src="./assets/images/swiper-content/4.jpg"
-                        alt=""
-                        class="swiper-slide card__image"
-                      />
-                    </div>
-                    <div class="swiper-slide card__image-container">
-                      <img
-                        src="./assets/images/swiper-content/5.jpg"
-                        alt=""
-                        class="swiper-slide card__image"
-                      />
-                    </div>
-                    <div class="swiper-slide card__image-container">
-                      <img
-                        src="./assets/images/swiper-content/6.jpg"
-                        alt=""
-                        class="swiper-slide card__image"
-                      />
-                    </div>
-                    <div class="swiper-slide card__image-container">
-                      <img
-                        src="./assets/images/swiper-content/7.jpg"
-                        alt=""
-                        class="swiper-slide card__image"
-                      />
-                    </div>
-                    <div class="swiper-slide card__image-container">
-                      <img
-                        src="./assets/images/swiper-content/8.jpg"
-                        alt=""
-                        class="swiper-slide card__image"
-                      />
-                    </div>
-                  </div>
-                </div>
-                <div
-                  thumbsSlider=""
-                  class="swiper swiper-small card__swiper card__swiper_small"
-                >
-                  <div class="swiper-wrapper">
-                    <div class="swiper-slide card__image-container">
-                      <img
-                        src="./assets/images/swiper-content/1.jpg"
-                        alt=""
-                        class="swiper-slide card__image"
-                      />
-                    </div>
-                    <div class="swiper-slide card__image-container">
-                      <img
-                        src="./assets/images/swiper-content/2.jpg"
-                        alt=""
-                        class="swiper-slide card__image"
-                      />
-                    </div>
-                    <div class="swiper-slide card__image-container">
-                      <img
-                        src="./assets/images/swiper-content/3.jpg"
-                        alt=""
-                        class="swiper-slide card__image"
-                      />
-                    </div>
-                    <div class="swiper-slide card__image-container">
-                      <img
-                        src="./assets/images/swiper-content/4.jpg"
-                        alt=""
-                        class="swiper-slide card__image"
-                      />
-                    </div>
-                    <div class="swiper-slide card__image-container">
-                      <img
-                        src="./assets/images/swiper-content/5.jpg"
-                        alt=""
-                        class="swiper-slide card__image"
-                      />
-                    </div>
-                    <div class="swiper-slide card__image-container">
-                      <img
-                        src="./assets/images/swiper-content/6.jpg"
-                        alt=""
-                        class="swiper-slide card__image"
-                      />
-                    </div>
-                    <div class="swiper-slide card__image-container">
-                      <img
-                        src="./assets/images/swiper-content/7.jpg"
-                        alt=""
-                        class="swiper-slide card__image"
-                      />
-                    </div>
-                    <div class="swiper-slide card__image-container">
-                      <img
-                        src="./assets/images/swiper-content/8.jpg"
-                        alt=""
-                        class="swiper-slide card__image"
-                      />
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="card__content">
-                <h3 class="card__title">ЭКСКАВАТОРЫ</h3>
-                <button class="card__button">Заказать</button>
-              </div>
-            </li>
-            <li class="additional__item card">
-              <div class="card__swipers">
-                <div class="swiper swiper-big card__swiper">
-                  <div class="swiper-wrapper">
-                    <div class="swiper-slide card__image-container">
-                      <img
-                        src="./assets/images/swiper-content/1.jpg"
-                        alt=""
-                        class="swiper-slide card__image"
-                      />
-                    </div>
-                    <div class="swiper-slide card__image-container">
-                      <img
-                        src="./assets/images/swiper-content/2.jpg"
-                        alt=""
-                        class="swiper-slide card__image"
-                      />
-                    </div>
-                    <div class="swiper-slide card__image-container">
-                      <img
-                        src="./assets/images/swiper-content/3.jpg"
-                        alt=""
-                        class="swiper-slide card__image"
-                      />
-                    </div>
-                    <div class="swiper-slide card__image-container">
-                      <img
-                        src="./assets/images/swiper-content/4.jpg"
-                        alt=""
-                        class="swiper-slide card__image"
-                      />
-                    </div>
-                    <div class="swiper-slide card__image-container">
-                      <img
-                        src="./assets/images/swiper-content/5.jpg"
-                        alt=""
-                        class="swiper-slide card__image"
-                      />
-                    </div>
-                    <div class="swiper-slide card__image-container">
-                      <img
-                        src="./assets/images/swiper-content/6.jpg"
-                        alt=""
-                        class="swiper-slide card__image"
-                      />
-                    </div>
-                    <div class="swiper-slide card__image-container">
-                      <img
-                        src="./assets/images/swiper-content/7.jpg"
-                        alt=""
-                        class="swiper-slide card__image"
-                      />
-                    </div>
-                    <div class="swiper-slide card__image-container">
-                      <img
-                        src="./assets/images/swiper-content/8.jpg"
-                        alt=""
-                        class="swiper-slide card__image"
-                      />
-                    </div>
-                  </div>
-                </div>
-                <div
-                  thumbsSlider=""
-                  class="swiper swiper-small card__swiper card__swiper_small"
-                >
-                  <div class="swiper-wrapper">
-                    <div class="swiper-slide card__image-container">
-                      <img
-                        src="./assets/images/swiper-content/1.jpg"
-                        alt=""
-                        class="swiper-slide card__image"
-                      />
-                    </div>
-                    <div class="swiper-slide card__image-container">
-                      <img
-                        src="./assets/images/swiper-content/2.jpg"
-                        alt=""
-                        class="swiper-slide card__image"
-                      />
-                    </div>
-                    <div class="swiper-slide card__image-container">
-                      <img
-                        src="./assets/images/swiper-content/3.jpg"
-                        alt=""
-                        class="swiper-slide card__image"
-                      />
-                    </div>
-                    <div class="swiper-slide card__image-container">
-                      <img
-                        src="./assets/images/swiper-content/4.jpg"
-                        alt=""
-                        class="swiper-slide card__image"
-                      />
-                    </div>
-                    <div class="swiper-slide card__image-container">
-                      <img
-                        src="./assets/images/swiper-content/5.jpg"
-                        alt=""
-                        class="swiper-slide card__image"
-                      />
-                    </div>
-                    <div class="swiper-slide card__image-container">
-                      <img
-                        src="./assets/images/swiper-content/6.jpg"
-                        alt=""
-                        class="swiper-slide card__image"
-                      />
-                    </div>
-                    <div class="swiper-slide card__image-container">
-                      <img
-                        src="./assets/images/swiper-content/7.jpg"
-                        alt=""
-                        class="swiper-slide card__image"
-                      />
-                    </div>
-                    <div class="swiper-slide card__image-container">
-                      <img
-                        src="./assets/images/swiper-content/8.jpg"
-                        alt=""
-                        class="swiper-slide card__image"
-                      />
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="card__content">
-                <h3 class="card__title">ПРИВЛЕКАЕМАЯ ТЕХНИКА</h3>
-                <p class="card__text">
-                  Привлечение по запросу заказчика 5т-75т, вороваек 5-15т.
-                </p>
-                <button class="card__button">Заказать</button>
-              </div>
-            </li>
-          </ul>
-        </div>
-      </section>
-    </main>
+            </div>
+            <h3 class="info-card__title">Сложные маршруты</h3>
+            <p class="info-card__text">
+              Опытные водители и полноприводные тягачи доставят груз по
+              <b>сложным маршрутам</b> и по <b>зимнику</b>
+            </p>
+          </li>
+        </ul>
+      </div>
+    </section>
 
-    <footer class="footer">
-      <div class="container footer__container">
-        <div class="footer__content">
-          <div class="contacts footer__contacts">
-            <h2 class="contacts__title">КОНТАКТЫ</h2>
-            <ul class="contacts__list">
-              <li class="contacts__item">
-                <a href="" class="contacts__link">
-                  <img
-                    class="contacts__link-image"
-                    src="./assets/images/location-icon.png"
-                    alt="Адрес"
-                  />
-                  <p class="contacts__link-text">
-                    Улица Мичурина, 75а Кировский район, Красноярск, 660050
-                  </p>
-                </a>
-              </li>
-              <li class="contacts__item">
-                <a href="" class="contacts__link">
-                  <img
-                    class="contacts__link-image"
-                    src="./assets/images/phone-icon.png"
-                    alt="Телефон"
-                  />
-                  <p class="contacts__link-text">+7 (908) 212-14-88</p>
-                </a>
-              </li>
-              <li class="contacts__item">
-                <a href="" class="contacts__link">
-                  <img
-                    class="contacts__link-image"
-                    src="./assets/images/phone-icon.png"
-                    alt="Телефон"
-                  />
-                  <p class="contacts__link-text">+7 (923) 280-66-99</p>
-                </a>
-              </li>
-              <li class="contacts__item">
-                <a href="" class="contacts__link">
-                  <img
-                    class="contacts__link-image"
-                    src="./assets/images/email-icon.png"
-                    alt="E-mail"
-                  />
-                  <p class="contacts__link-text">2404021360@mail.ru</p>
-                </a>
-              </li>
-            </ul>
-
-            <div class="footer__social social">
-              <h3 class="social__title">Мы в мессенджерах:</h3>
-              <ul class="social__list">
-                <li class="soclial__item">
-                  <a href="" class="social__link">
-                    <img
-                      src="./assets/images/telegram-icon.png"
-                      alt=""
-                      class="social__link-image"
-                    />
-                  </a>
+    <section class="section additional" id="additional">
+      <div class="container additional__container">
+        <h2 class="title additional__title">ДОПОЛНИТЕЛЬНЫЕ УСЛУГИ</h2>
+        <ul class="additional__list">
+          <li class="additional__item card">
+            <div class="card__swipers">
+              <div class="swiper swiper-big card__swiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide card__image-container">
+                    <img src="./assets/images/swiper-content/additional/1.jpg" alt="" class="card__image" />
+                  </div>
+                  <div class="swiper-slide card__image-container">
+                    <img src="./assets/images/swiper-content/additional/2.jpg" alt="" class="card__image" />
+                  </div>
+                  <div class="swiper-slide card__image-container">
+                    <img src="./assets/images/swiper-content/additional/3.jpg" alt="" class="card__image" />
+                  </div>
+                  <div class="swiper-slide card__image-container">
+                    <img src="./assets/images/swiper-content/additional/4.jpg" alt="" class="card__image" />
+                  </div>
+                  <div class="swiper-slide card__image-container">
+                    <img src="./assets/images/swiper-content/additional/5.jpg" alt="" class="card__image" />
+                  </div>
+                  <div class="swiper-slide card__image-container">
+                    <img src="./assets/images/swiper-content/additional/6.jpg" alt="" class="card__image" />
+                  </div>
+                  <div class="swiper-slide card__image-container">
+                    <img src="./assets/images/swiper-content/additional/7.jpg" alt="" class="card__image" />
+                  </div>
+                  <div class="swiper-slide card__image-container">
+                    <img src="./assets/images/swiper-content/additional/8.jpg" alt="" class="card__image" />
+                  </div>
+                </div>
+              </div>
+              <div thumbsSlider="" class="swiper swiper-small card__swiper card__swiper_small">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide card__image-container">
+                    <img src="./assets/images/swiper-content/additional/1.jpg" alt="" class="card__image" />
+                  </div>
+                  <div class="swiper-slide card__image-container">
+                    <img src="./assets/images/swiper-content/additional/2.jpg" alt="" class="card__image" />
+                  </div>
+                  <div class="swiper-slide card__image-container">
+                    <img src="./assets/images/swiper-content/additional/3.jpg" alt="" class="card__image" />
+                  </div>
+                  <div class="swiper-slide card__image-container">
+                    <img src="./assets/images/swiper-content/additional/4.jpg" alt="" class="card__image" />
+                  </div>
+                  <div class="swiper-slide card__image-container">
+                    <img src="./assets/images/swiper-content/additional/5.jpg" alt="" class="card__image" />
+                  </div>
+                  <div class="swiper-slide card__image-container">
+                    <img src="./assets/images/swiper-content/additional/6.jpg" alt="" class="card__image" />
+                  </div>
+                  <div class="swiper-slide card__image-container">
+                    <img src="./assets/images/swiper-content/additional/7.jpg" alt="" class="card__image" />
+                  </div>
+                  <div class="swiper-slide card__image-container">
+                    <img src="./assets/images/swiper-content/additional/8.jpg" alt="" class="card__image" />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card__content">
+              <h3 class="card__title">ПРИ НЕОБХОДИМОСТИ:</h3>
+              <ul class="card__list">
+                <li class="card__item">
+                  Такелажные работы для тяжелых и объемных грузов
                 </li>
-                <li class="soclial__item">
-                  <a href="" class="social__link">
-                    <img
-                      src="./assets/images/whatsapp-icon.png"
-                      alt=""
-                      class="social__link-image"
-                    />
-                  </a>
+                <li class="card__item">
+                  Такелажные работы от 70 тонн и выше
                 </li>
-                <li class="soclial__item">
-                  <a href="" class="social__link">
-                    <img
-                      src="./assets/images/viber-icon.png"
-                      alt=""
-                      class="social__link-image"
-                    />
-                  </a>
+                <li class="card__item">Загон и сгон техники на трал</li>
+                <li class="card__item">Выезд на объект для осмотра груза</li>
+                <li class="card__item">
+                  Сопровождение груза по всему маршруту
+                </li>
+                <li class="card__item">Оформление Разрешений на перевозку</li>
+                <li class="card__item">
+                  Оформление Спецпроектов на перевозку
                 </li>
               </ul>
+              <button class="card__button">Заказать</button>
             </div>
+          </li>
+        </ul>
+      </div>
+    </section>
 
-            <p class="contacts__text">
-              <span class="contacts__text_blue">ООО "ТРАНССИБТРАЛ"</span>
-              выражает искреннюю заинтересованность в развитии деловых
-              партнерских взаимоотношений и предлагает рассмотреть основные
-              перспективные направления <b>взаимовыгодного</b> сотрудничества.
-            </p>
+    <section class="section rent" id="rent">
+      <div class="container rent__container">
+        <h2 class="title rent__title">АРЕНДА СПЕЦТЕХНИКИ</h2>
+        <ul class="additional__list">
+          <li class="additional__item card">
+            <div class="card__swipers">
+              <div class="swiper swiper-big card__swiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide card__image-container">
+                    <img src="./assets/images/swiper-content/1.jpg" alt="" class="card__image" />
+                  </div>
+                  <div class="swiper-slide card__image-container">
+                    <img src="./assets/images/swiper-content/2.jpg" alt="" class="card__image" />
+                  </div>
+                  <div class="swiper-slide card__image-container">
+                    <img src="./assets/images/swiper-content/3.jpg" alt="" class="card__image" />
+                  </div>
+                  <div class="swiper-slide card__image-container">
+                    <img src="./assets/images/swiper-content/4.jpg" alt="" class="card__image" />
+                  </div>
+                  <div class="swiper-slide card__image-container">
+                    <img src="./assets/images/swiper-content/5.jpg" alt="" class="card__image" />
+                  </div>
+                  <div class="swiper-slide card__image-container">
+                    <img src="./assets/images/swiper-content/6.jpg" alt="" class="card__image" />
+                  </div>
+                  <div class="swiper-slide card__image-container">
+                    <img src="./assets/images/swiper-content/7.jpg" alt="" class="card__image" />
+                  </div>
+                  <div class="swiper-slide card__image-container">
+                    <img src="./assets/images/swiper-content/8.jpg" alt="" class="card__image" />
+                  </div>
+                </div>
+              </div>
+              <div thumbsSlider="" class="swiper swiper-small card__swiper card__swiper_small">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide card__image-container">
+                    <img src="./assets/images/swiper-content/1.jpg" alt="" class="card__image" />
+                  </div>
+                  <div class="swiper-slide card__image-container">
+                    <img src="./assets/images/swiper-content/2.jpg" alt="" class="card__image" />
+                  </div>
+                  <div class="swiper-slide card__image-container">
+                    <img src="./assets/images/swiper-content/3.jpg" alt="" class="card__image" />
+                  </div>
+                  <div class="swiper-slide card__image-container">
+                    <img src="./assets/images/swiper-content/4.jpg" alt="" class="card__image" />
+                  </div>
+                  <div class="swiper-slide card__image-container">
+                    <img src="./assets/images/swiper-content/5.jpg" alt="" class="card__image" />
+                  </div>
+                  <div class="swiper-slide card__image-container">
+                    <img src="./assets/images/swiper-content/6.jpg" alt="" class="card__image" />
+                  </div>
+                  <div class="swiper-slide card__image-container">
+                    <img src="./assets/images/swiper-content/7.jpg" alt="" class="card__image" />
+                  </div>
+                  <div class="swiper-slide card__image-container">
+                    <img src="./assets/images/swiper-content/8.jpg" alt="" class="card__image" />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card__content">
+              <h3 class="card__title">ДЭК 323</h3>
+              <button class="card__button">Заказать</button>
+            </div>
+          </li>
+          <li class="additional__item card">
+            <div class="card__swipers">
+              <div class="swiper swiper-big card__swiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide card__image-container">
+                    <img src="./assets/images/swiper-content/1.jpg" alt="" class="card__image" />
+                  </div>
+                  <div class="swiper-slide card__image-container">
+                    <img src="./assets/images/swiper-content/2.jpg" alt="" class="card__image" />
+                  </div>
+                  <div class="swiper-slide card__image-container">
+                    <img src="./assets/images/swiper-content/3.jpg" alt="" class="card__image" />
+                  </div>
+                  <div class="swiper-slide card__image-container">
+                    <img src="./assets/images/swiper-content/4.jpg" alt="" class="card__image" />
+                  </div>
+                  <div class="swiper-slide card__image-container">
+                    <img src="./assets/images/swiper-content/5.jpg" alt="" class="card__image" />
+                  </div>
+                  <div class="swiper-slide card__image-container">
+                    <img src="./assets/images/swiper-content/6.jpg" alt="" class="card__image" />
+                  </div>
+                  <div class="swiper-slide card__image-container">
+                    <img src="./assets/images/swiper-content/7.jpg" alt="" class="card__image" />
+                  </div>
+                  <div class="swiper-slide card__image-container">
+                    <img src="./assets/images/swiper-content/8.jpg" alt="" class="card__image" />
+                  </div>
+                </div>
+              </div>
+              <div thumbsSlider="" class="swiper swiper-small card__swiper card__swiper_small">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide card__image-container">
+                    <img src="./assets/images/swiper-content/1.jpg" alt="" class="card__image" />
+                  </div>
+                  <div class="swiper-slide card__image-container">
+                    <img src="./assets/images/swiper-content/2.jpg" alt="" class="card__image" />
+                  </div>
+                  <div class="swiper-slide card__image-container">
+                    <img src="./assets/images/swiper-content/3.jpg" alt="" class="card__image" />
+                  </div>
+                  <div class="swiper-slide card__image-container">
+                    <img src="./assets/images/swiper-content/4.jpg" alt="" class="card__image" />
+                  </div>
+                  <div class="swiper-slide card__image-container">
+                    <img src="./assets/images/swiper-content/5.jpg" alt="" class="card__image" />
+                  </div>
+                  <div class="swiper-slide card__image-container">
+                    <img src="./assets/images/swiper-content/6.jpg" alt="" class="card__image" />
+                  </div>
+                  <div class="swiper-slide card__image-container">
+                    <img src="./assets/images/swiper-content/7.jpg" alt="" class="card__image" />
+                  </div>
+                  <div class="swiper-slide card__image-container">
+                    <img src="./assets/images/swiper-content/8.jpg" alt="" class="card__image" />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card__content">
+              <h3 class="card__title">ЭКСКАВАТОРЫ</h3>
+              <button class="card__button">Заказать</button>
+            </div>
+          </li>
+          <li class="additional__item card">
+            <div class="card__swipers">
+              <div class="swiper swiper-big card__swiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide card__image-container">
+                    <img src="./assets/images/swiper-content/1.jpg" alt="" class="card__image" />
+                  </div>
+                  <div class="swiper-slide card__image-container">
+                    <img src="./assets/images/swiper-content/2.jpg" alt="" class="card__image" />
+                  </div>
+                  <div class="swiper-slide card__image-container">
+                    <img src="./assets/images/swiper-content/3.jpg" alt="" class="card__image" />
+                  </div>
+                  <div class="swiper-slide card__image-container">
+                    <img src="./assets/images/swiper-content/4.jpg" alt="" class="card__image" />
+                  </div>
+                  <div class="swiper-slide card__image-container">
+                    <img src="./assets/images/swiper-content/5.jpg" alt="" class="card__image" />
+                  </div>
+                  <div class="swiper-slide card__image-container">
+                    <img src="./assets/images/swiper-content/6.jpg" alt="" class="card__image" />
+                  </div>
+                  <div class="swiper-slide card__image-container">
+                    <img src="./assets/images/swiper-content/7.jpg" alt="" class="card__image" />
+                  </div>
+                  <div class="swiper-slide card__image-container">
+                    <img src="./assets/images/swiper-content/8.jpg" alt="" class="card__image" />
+                  </div>
+                </div>
+              </div>
+              <div thumbsSlider="" class="swiper swiper-small card__swiper card__swiper_small">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide card__image-container">
+                    <img src="./assets/images/swiper-content/1.jpg" alt="" class="card__image" />
+                  </div>
+                  <div class="swiper-slide card__image-container">
+                    <img src="./assets/images/swiper-content/2.jpg" alt="" class="card__image" />
+                  </div>
+                  <div class="swiper-slide card__image-container">
+                    <img src="./assets/images/swiper-content/3.jpg" alt="" class="card__image" />
+                  </div>
+                  <div class="swiper-slide card__image-container">
+                    <img src="./assets/images/swiper-content/4.jpg" alt="" class="card__image" />
+                  </div>
+                  <div class="swiper-slide card__image-container">
+                    <img src="./assets/images/swiper-content/5.jpg" alt="" class="card__image" />
+                  </div>
+                  <div class="swiper-slide card__image-container">
+                    <img src="./assets/images/swiper-content/6.jpg" alt="" class="card__image" />
+                  </div>
+                  <div class="swiper-slide card__image-container">
+                    <img src="./assets/images/swiper-content/7.jpg" alt="" class="card__image" />
+                  </div>
+                  <div class="swiper-slide card__image-container">
+                    <img src="./assets/images/swiper-content/8.jpg" alt="" class="card__image" />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card__content">
+              <h3 class="card__title">ПРИВЛЕКАЕМАЯ ТЕХНИКА</h3>
+              <p class="card__text">
+                Привлечение по запросу заказчика 5т-75т, вороваек 5-15т.
+              </p>
+              <button class="card__button">Заказать</button>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer" id="footer">
+    <div class="container footer__container">
+      <div class="footer__content">
+        <div class="contacts footer__contacts">
+          <h2 class="contacts__title">КОНТАКТЫ</h2>
+          <ul class="contacts__list">
+            <li class="contacts__item">
+              <img class="contacts__link-image" src="./assets/images/location-icon.png" alt="Адрес" />
+              <p class="contacts__link-text">
+                Улица Мичурина, 75а Кировский район, Красноярск, 660050
+              </p>
+            </li>
+            <li class="contacts__item">
+              <a href="tel:+79082121488" class="contacts__link">
+                <img class="contacts__link-image" src="./assets/images/phone-icon.png" alt="Телефон" />
+                <p class="contacts__link-text">+7 (908) 212-14-88</p>
+              </a>
+            </li>
+            <li class="contacts__item">
+              <a href="tel:+79232806699" class="contacts__link">
+                <img class="contacts__link-image" src="./assets/images/phone-icon.png" alt="Телефон" />
+                <p class="contacts__link-text">+7 (923) 280-66-99</p>
+              </a>
+            </li>
+            <li class="contacts__item">
+              <a href="mailto:2404021360@mail.ru" class="contacts__link" target="_blank">
+                <img class="contacts__link-image" src="./assets/images/email-icon.png" alt="E-mail" />
+                <p class="contacts__link-text">2404021360@mail.ru</p>
+              </a>
+            </li>
+          </ul>
+
+          <div class="footer__social social">
+            <h3 class="social__title">Мы в мессенджерах:</h3>
+            <ul class="social__list">
+              <li class="soclial__item">
+                <a href="https://t.me/+79082121488" class="social__link" target="_blank">
+                  <img src="./assets/images/telegram-icon.png" alt="" class="social__link-image" />
+                </a>
+              </li>
+              <li class="soclial__item">
+                <a href="https://wa.me/+79082121488" class="social__link" target="_blank">
+                  <img src="./assets/images/whatsapp-icon.png" alt="" class="social__link-image" />
+                </a>
+              </li>
+              <li class="soclial__item">
+                <a href="viber://chat?number=79082121488" class="social__link">
+                  <img src="./assets/images/viber-icon.png" alt="" class="social__link-image" />
+                </a>
+              </li>
+            </ul>
           </div>
-          <div class="footer__map map">
-            <iframe
-              src="https://yandex.ru/map-widget/v1/?um=constructor%3A95ac9759a1f44711536cd97028f51e767e2d3d5f64f5559ebe9b8f3ae3888872&amp;source=constructor"
-              width="100%"
-              height="100%"
-              frameborder="0"
-              style="border: 2px solid #999"
-            ></iframe>
-          </div>
+
+          <p class="contacts__text">
+            <span class="contacts__text_blue">ООО "ТРАНССИБТРАЛ"</span>
+            выражает искреннюю заинтересованность в развитии деловых
+            партнерских взаимоотношений и предлагает рассмотреть основные
+            перспективные направления <b>взаимовыгодного</b> сотрудничества.
+          </p>
+        </div>
+        <div class="footer__map map">
+          <iframe
+            src="https://yandex.ru/map-widget/v1/?um=constructor%3A95ac9759a1f44711536cd97028f51e767e2d3d5f64f5559ebe9b8f3ae3888872&amp;source=constructor"
+            width="100%" height="100%" frameborder="0" style="border: 2px solid #999"></iframe>
         </div>
       </div>
-      <div class="footer__block copyright">
-        <div class="copyright__container container">
-          <span class="copyright__symbol">©</span>
-          <div>
-            <p class="copyright__text">ООО "ТрансСибТрал (ИНН 2404021360)</p>
-            <p class="copyright__text"">
+    </div>
+    <div class="footer__block copyright">
+      <div class="copyright__container container">
+        <span class="copyright__symbol">©</span>
+        <div>
+          <p class="copyright__text">ООО "ТрансСибТрал (ИНН 2404021360)</p>
+          <p class="copyright__text"">
               ИП Комарова М.Е. (ИНН 246410517041)
             </p>
           </div>
         </div>
       </div>
     </footer>
-
-    <div class="form">
-      <div class="form__container">
-        <div class="form__title-content">
-          <h2 class="form__title title">форма обратного вызова</h2>
-          <button class="form__close-button"></button>
-        </div>
-        <form class="form__content">
-          <input
-            name="name"
-            type="text"
-            class="form__input"
-            placeholder="Имя"
-          />
-          <input
-            name="phone"
-            type="tel"
-            class="form__input"
-            placeholder="Номер телефона"
-          />
-          <input
-            name="cars"
-            type="text"
-            class="form__input"
-            placeholder="Интересующая техника"
-          />
-          <textarea
-            name="description"
-            class="form__input form__input_big"
-            rows="5"
-            placeholder="Текст сообщения"
-          ></textarea>
-          <button type="submit" class="form__submit-button">
-            отправить заявку
-          </button>
-        </form>
-        <div class="form__social form-social">
-          <h3 class="form-social__title">связаться через месседжеры</h3>
-          <div class="form-social__content">
-            <a href="" class="form-social__link"
-              ><img
-                src="./assets/images/whatsapp-black-icon.png"
-                alt="whatsapp"
-                class="form-social__image"
-            /></a>
-            <a href="" class="form-social__link">
-              <img
-                src="./assets/images/viber-black-icon.png"
-                alt="viber"
-                class="form-social__image"
-            /></a>
-            <a href="" class="form-social__link">
-              <img
-                src="./assets/images/telegram-black-icon.png"
-                alt="telegram"
-                class="form-social__image"
-            /></a>
+    
+    <div class=" form">
+          <div class="form__container">
+            <div class="form__title-content">
+              <h2 class="form__title title">форма обратного вызова</h2>
+              <button class="form__close-button close-button"></button>
+            </div>
+            <form class="form__content">
+              <input name="name" type="text" class="form__input" placeholder="Имя" />
+              <input name="phone" type="tel" class="form__input" placeholder="Номер телефона" />
+              <input name="cars" type="text" class="form__input" placeholder="Интересующая техника" />
+              <textarea name="description" class="form__input form__input_big" rows="5"
+                placeholder="Текст сообщения"></textarea>
+              <button type="submit" class="form__submit-button">
+                отправить заявку
+              </button>
+            </form>
+            <div class="form__social form-social">
+              <h3 class="form-social__title">связаться через месседжеры</h3>
+              <div class="form-social__content">
+                <a href="https://wa.me/+79082121488" class="form-social__link"><img
+                    src="./assets/images/whatsapp-black-icon.png" alt="whatsapp" class="form-social__image" /></a>
+                <a href="viber://chat?number=79082121488" class="form-social__link">
+                  <img src="./assets/images/viber-black-icon.png" alt="viber" class="form-social__image" /></a>
+                <a href="https://t.me/+79082121488" class="form-social__link">
+                  <img src="./assets/images/telegram-black-icon.png" alt="telegram" class="form-social__image" /></a>
+              </div>
+            </div>
           </div>
         </div>
-      </div>
-    </div>
-  </body>
-  <script src="script.js"></script>
+</body>
+<script src="script.js"></script>
+
 </html>

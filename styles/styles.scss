@@ -45,9 +45,7 @@ ul {
   color: #fff;
   background-color: #1f1f1f;
   padding: 20px;
-  @include mobile {
-    font-size: 1.3em;
-  }
+  font-size: 1.3em;
 }
 
 .section {
