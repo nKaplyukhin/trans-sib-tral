@@ -22,24 +22,28 @@ const addFormButtonsListener = () => {
 };
 
 const initializeSwipers = () => {
-  const swiperSmall = new Swiper(".card-swiper-small", {
-    loop: true,
-    slidesPerView: 9,
-    freeMode: true,
-    watchSlidesProgress: true,
-    autoplay: {
-      delay: 3000,
-    },
-  });
-  const swiper = new Swiper(".card-swiper", {
-    loop: true,
-    spaceBetween: 20,
-    autoplay: {
-      delay: 3000,
-    },
-    thumbs: {
-      swiper: swiperSmall,
-    },
+  const cardSwipers = document.querySelectorAll(".card-swiper");
+  const cardSwipersSmall = document.querySelectorAll(".card-swiper-small");
+
+  cardSwipers.forEach((cardSwiper, index) => {
+    const swiperSmall = new Swiper(cardSwipersSmall[index], {
+      loop: true,
+      slidesPerView: 8,
+      spaceBetween: 5,
+      freeMode: true,
+      watchSlidesProgress: true,
+    });
+    console.log(swiperSmall);
+    const swiper = new Swiper(cardSwiper, {
+      loop: true,
+      spaceBetween: 20,
+      // autoplay: {
+      //   delay: 3000,
+      // },
+      thumbs: {
+        swiper: swiperSmall,
+      },
+    });
   });
 };
 

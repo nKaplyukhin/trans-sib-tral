@@ -2,15 +2,27 @@
 
 .footer {
   padding: 30px 0;
-  &__container {
+  padding-bottom: 0;
+  &__content {
     display: flex;
     gap: 10px;
+    margin-bottom: 20px;
   }
   &__contacts {
     width: 55%;
   }
   &__map {
     width: 45%;
+    height: 300px;
+  }
+  @include mobile {
+    &__content {
+      flex-direction: column;
+    }
+    &__contacts,
+    &__map {
+      width: 100%;
+    }
   }
 }
 
@@ -41,10 +53,6 @@
       font-weight: bold;
     }
   }
-  &__text-container {
-    display: flex;
-    gap: 5px;
-  }
 }
 
 .social {
@@ -60,5 +68,17 @@
   }
   &__link-image {
     width: 40px;
+  }
+}
+
+.copyright {
+  display: flex;
+  gap: 5px;
+  background-color: $black-color;
+  color: #fff;
+  font-size: 1.2rem;
+  padding: 10px;
+  @include mobile {
+    font-size: 1rem;
   }
 }
