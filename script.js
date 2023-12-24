@@ -27,11 +27,8 @@ const initializeSwipers = () => {
   const cardSwipers = document.querySelectorAll(".swiper-big");
   const cardSwipersSmall = document.querySelectorAll(".swiper-small");
 
-  console.log(cardSwipers, cardSwipersSmall);
-
   cardSwipers.forEach((cardSwiper, index) => {
     const swiperSmall = new Swiper(cardSwipersSmall[index], {
-      loop: true,
       slidesPerView: 8,
       spaceBetween: 5,
       freeMode: true,
