@@ -2,4 +2,9 @@
   &__title {
     margin-bottom: 20px;
   }
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
 }

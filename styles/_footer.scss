@@ -59,7 +59,7 @@
   &__title {
     margin-bottom: 20px;
     font-weight: normal;
-    font-size: 1.2rem;
+    font-size: 1.2em;
   }
   &__list {
     display: flex;
@@ -72,13 +72,15 @@
 }
 
 .copyright {
-  display: flex;
-  gap: 5px;
   background-color: $black-color;
   color: #fff;
-  font-size: 1.2rem;
-  padding: 10px;
+  font-size: 1.2em;
+  padding: 40px;
+  &__container {
+    display: flex;
+    gap: 5px;
+  }
   @include mobile {
-    font-size: 1rem;
+    font-size: 1em;
   }
 }

@@ -22,8 +22,10 @@ const addFormButtonsListener = () => {
 };
 
 const initializeSwipers = () => {
-  const cardSwipers = document.querySelectorAll(".card-swiper");
-  const cardSwipersSmall = document.querySelectorAll(".card-swiper-small");
+  const cardSwipers = document.querySelectorAll(".swiper-big");
+  const cardSwipersSmall = document.querySelectorAll(".swiper-small");
+
+  console.log(cardSwipers, cardSwipersSmall);
 
   cardSwipers.forEach((cardSwiper, index) => {
     const swiperSmall = new Swiper(cardSwipersSmall[index], {
@@ -33,13 +35,12 @@ const initializeSwipers = () => {
       freeMode: true,
       watchSlidesProgress: true,
     });
-    console.log(swiperSmall);
     const swiper = new Swiper(cardSwiper, {
       loop: true,
       spaceBetween: 20,
-      // autoplay: {
-      //   delay: 3000,
-      // },
+      autoplay: {
+        delay: 3000,
+      },
       thumbs: {
         swiper: swiperSmall,
       },

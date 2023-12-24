@@ -13,12 +13,22 @@
     text-transform: uppercase;
     font-weight: 800;
   }
+  &__item {
+    &_city {
+      color: $red-color;
+    }
+  }
   &__link,
   &__number-link {
     transition: color 0.3s ease-out;
     &:hover {
       color: $red-color;
     }
+  }
+  &__numbers {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
   }
   &__number-link {
     font-weight: 300;
