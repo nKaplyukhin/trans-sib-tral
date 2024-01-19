@@ -1,3 +1,6 @@
+import "./styles/styles.scss";
+import Swiper from "swiper";
+
 const form = document.querySelector(".form");
 
 const openForm = () => {
