@@ -28,11 +28,20 @@ jobs:
           npm install
           npm run build
 
-      - name: Deploy to Github Pages
-        uses: JamesIves/github-pages-deploy-action@4.2.1
+      # - name: Deploy to Github Pages
+      #   uses: JamesIves/github-pages-deploy-action@4.2.1
+      #   with:
+      #     branch: gh-pages
+      #     folder: dist
+
+      - name: Deploy to Hosting
+        uses: SamKirkland/FTP-Deploy-Action@4.0.0
         with:
-          branch: gh-pages
-          folder: dist
+          local-dir: ./dist/
+          server: ${{ secrets.FTP_SERVER }}
+          username: ${{ secrets.FTP_USERNAME }}
+          password: ${{ secrets.FTP_PASSWORD }}
+          server-dir: tralsib.ru/public_html/
 
       - name: Fail on failed tests
         run: |
