@@ -56,8 +56,9 @@
 }
 
 .burger {
+  display: none;
   &__button {
-    display: none;
+      display: flex;
     position: absolute;
     right: 0;
     top: 50%;
@@ -89,9 +90,7 @@
       bottom: 0;
     }
 
-    @include mobile {
-      display: flex;
-    }
+   
   }
   &__menu {
     position: fixed;
@@ -141,6 +140,9 @@
   }
   &__social {
     margin: 0 !important;
+  }
+  @include mobile {
+    display: flex;
   }
 }
 

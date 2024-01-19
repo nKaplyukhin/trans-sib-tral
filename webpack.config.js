@@ -9,7 +9,7 @@ const port = 3000;
 const dist = path.join(__dirname, "dist");
 const src = path.join(__dirname, "src");
 
-module.exports = (_, args) => ({
+module.exports = () => ({
   entry: "./index.js",
   devtool: "source-map",
   context: src,
@@ -30,7 +30,7 @@ module.exports = (_, args) => ({
     path: dist,
     filename: `js/[name].js`,
     chunkFilename: `js/[name].js`,
-    assetModuleFilename: path.join("images", "[name].[contenthash][ext]"),
+    assetModuleFilename: "assets/[hash][ext][query]",
   },
   module: {
     rules: [
@@ -84,6 +84,10 @@ module.exports = (_, args) => ({
       },
     }),
   ],
+  performance: {
+    maxEntrypointSize: 5120000,
+    maxAssetSize: 5120000,
+  },
   optimization: {
     minimizer: [
       new ImageMinimizerPlugin({

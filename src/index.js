@@ -1,5 +1,6 @@
 import "./styles/styles.scss";
 import Swiper from "swiper";
+import { Autoplay, Thumbs } from "swiper/modules";
 
 const form = document.querySelector(".form");
 
@@ -38,6 +39,7 @@ const initializeSwipers = () => {
       watchSlidesProgress: true,
     });
     const swiper = new Swiper(cardSwiper, {
+      modules: [Autoplay, Thumbs],
       loop: true,
       spaceBetween: 20,
       autoplay: {
